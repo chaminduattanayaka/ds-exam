@@ -40,6 +40,6 @@ jobs:
           docker tag ${{ github.sha }} 303224671331.dkr.ecr.eu-north-1.amazonaws.com/ds-exam:latest
           docker push 303224671331.dkr.ecr.eu-north-1.amazonaws.com/ds-exam:latest
 
-      - name: Deploy to ECS
-        run: |
-          aws ecs update-service --cluster DevCluster --service nodejsappservice --force-new-deployment
+      #- name: Deploy to ECS
+       # run: |
+        #  aws ecs update-service --cluster DevCluster --service nodejsappservice --force-new-deployment
